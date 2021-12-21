@@ -297,6 +297,9 @@
     #logo {
       margin-left: 7.5em;
     }
+    .card__buttons{
+      margin-top: 0.1em;
+    }
   }
   @media only screen and (max-width: 380px) {
     #logo {
