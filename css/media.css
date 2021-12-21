@@ -1,0 +1,346 @@
+/* Media queries */
+  @media only screen and (max-width: 1600px) {
+    .imgHeader .imgHeader__welcome h2 {
+      width: 15em;
+    }
+  }
+  @media only screen and (max-width: 1500px) {
+    .about__text {
+      margin-left: 5em;
+    }
+    .about .about__text .subtitle {
+      margin-top: 1.5em;
+    }
+    .about .about__text p {
+      font-size: 1.5em;
+      margin-top: 1.5em;
+    }
+    .about__button {
+      margin-top: 1em;
+    }
+    .about__image {
+      margin-top: 7em;
+      margin-left: 3em;
+    }
+    .about__image img {
+      width: 30em;
+    }
+  
+    .contact__content--graphic {
+      margin-left: 5em;
+    }
+    .contact__content--form {
+      margin-top: 3em;
+    }
+    .card {
+      margin: 3em;
+    }
+  }
+  @media only screen and (max-width: 1366px) {
+    .about {
+      padding-bottom: 3em;
+    }
+    .about__text {
+      margin-left: 5em;
+      width: 55%;
+    }
+    .about .about__text .subtitle {
+      font-size: 2em;
+      margin-top: 1.5em;
+    }
+  
+    .about__image img {
+      width: 28em;
+    }
+    .skills {
+      padding-bottom: 5em;
+    }
+    .skills__content {
+      margin-top: 1em;
+    }
+  
+    .contact__content--graphic {
+      margin-left: 2em;
+    }
+    .contact__content--form h2 {
+      font-size: 26px;
+    }
+    .contact__content--form-label {
+      color: var(--white);
+      font-weight: bold;
+      font-size: 26px;
+      text-align: center;
+      margin-top: 0.7em;
+    }
+    .contact__content--form-input {
+      margin-top: 0.7em;
+    }
+    .contact__content--form-textArea {
+      margin-top: 0.7em;
+    }
+  
+    .contact__content--graphicImage img {
+      height: 40em;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .imgHeader .imgHeader__welcome h1 {
+      font-size: 54px;
+    }
+    .imgHeader .imgHeader__welcome h2 {
+      font-size: 26px;
+    }
+    .imgHeader .imgHeader__welcome hr {
+      width: 700px;
+    }
+    #goDown {
+      width: 10em;
+      height: 3em;
+    }
+    .about__image img {
+      width: 27em;
+    }
+    .about .about__text .subtitle {
+      font-size: 1.8em;
+    }
+    .about .about__text p {
+      font-size: 1.4em;
+      margin-top: 1em;
+    }
+    .skills__content--element {
+      width: 500px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    #logo {
+      width: 9%;
+    }
+    .menu__listContainer--elements a {
+      font-size: 25px;
+    }
+  
+    .contact__content--form {
+      margin-top: 5em;
+      margin-left: 0em;
+    }
+    .contact__content--graphic {
+      margin-left: 0em;
+    }
+    .contact__content--graphicImage img {
+      height: 35em;
+    }
+  
+    @media only screen and (max-height: 600px) {
+      .imgHeader .imgHeader__welcome img {
+        width: 5em;
+      }
+      .imgHeader__welcome {
+        padding-top: 10em;
+        padding-bottom: 2em;
+      }
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    #logo {
+      width: 15%;
+    }
+    .menu__listContainer--elements a {
+      font-size: 20px;
+    }
+    .imgHeader .imgHeader__welcome h1 {
+      font-size: 44px;
+      text-align: center;
+    }
+    .imgHeader .imgHeader__welcome hr {
+      width: 550px;
+    }
+    .imgHeader .imgHeader__welcome h2 {
+      width: 8em;
+      font-size: 34px;
+      text-align: center;
+    }
+    .title {
+      font-size: 36px;
+    }
+    .about .about__text .subtitle {
+      font-size: 24px;
+    }
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+    .about__text {
+      width: 100%;
+      margin-left: 0px;
+    }
+    .about .about__text p {
+      font-size: 18px;
+      text-align: center;
+    }
+    .about__button {
+      width: 9em;
+      height: 2.5em;
+      font-size: 24px;
+    }
+    .about__image img {
+      width: 20em;
+    }
+    .contact__content {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .skills__content--element {
+      width: 300px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #logo {
+      width: 35%;
+      margin-left: 10em;
+    }
+    .menu__button > .fa-bars {
+      display: block;
+      top: 1.25em;
+      margin-right: 0.5em;
+      cursor: pointer;
+      color: var(--blue);
+      z-index: 1;
+    }
+    .menu__listContainer {
+      position: absolute;
+      top: 0em;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: var(--black);
+      z-index: -1;
+    }
+    .menu__listContainer--elements {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .menu__listContainer--elements li {
+      width: 90%;
+      margin: 10px 0;
+      text-align: center;
+    }
+    .menu__listContainer--elements a {
+      font-size: 40px;
+      text-align: center;
+    }
+    .menu__listContainer--elements li a.activo {
+      color: var(--white);
+    }
+    .menu__listContainer--elements a:hover {
+      color: var(--blue);
+    }
+    .skills__content--element {
+      width: 200px;
+    }
+    .imgHeader .imgHeader__welcome h1 {
+      font-size: 44px;
+    }
+    .imgHeader .imgHeader__welcome hr {
+      width: 400px;
+    }
+    .imgHeader .imgHeader__welcome h2 {
+      width: 8em;
+      font-size: 34px;
+      text-align: center;
+    }
+    .contact__content--graphicImage img {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .imgHeader__welcome {
+      padding-top: 10em;
+    }
+    .imgHeader .imgHeader__welcome h1 {
+      width: 6em;
+      font-size: 44px;
+      text-align: center;
+    }
+    .imgHeader .imgHeader__welcome hr {
+      width: 350px;
+    }
+    .about__image img {
+      width: 100%;
+    }
+  
+    .card {
+      margin: 1em;
+    }
+  
+    .contact__content--form {
+      width: 100%;
+    }
+    .contact__content--form-form {
+      text-align: center;
+    }
+  
+    .contact__content--form-label {
+      width: 100%;
+    }
+    .contact__content--form-input {
+      width: 95%;
+    }
+    .contact__content--form-textArea {
+      width: 95%;
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    #logo {
+      margin-left: 7em;
+    }
+    .imgHeader .imgHeader__welcome h1 {
+      font-size: 35px;
+    }
+    .imgHeader .imgHeader__welcome h2 {
+      font-size: 22px;
+    }
+    .imgHeader .imgHeader__welcome hr {
+      width: 300px;
+    }
+    #goDown {
+      width: 6em;
+      height: 2.5em;
+    }
+    .about__text p {
+      width: 100%;
+      font-size: 25px;
+    }
+  
+    .skills__content--element {
+      width: 150px;
+    }
+    .card {
+      margin: 0em;
+      margin-bottom: 1em;
+      width: 100%;
+      box-shadow: none;
+    }
+    .card__buttons {
+      margin-top: 0.5em;
+    }
+    .contact__content--form h2 {
+      width: 100%;
+      font-size: 30px;
+    }
+    .contact__content--graphicSocial {
+      width: 100%;
+      margin-left: 0em;
+    }
+    .contact__content--graphicSocial img {
+      width: 3em;
+    }
+  
+    .contact__content--graphicSocial-buttonBox {
+      width: 5em;
+      height: 5em;
+    }
+  }
