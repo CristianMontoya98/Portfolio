@@ -352,3 +352,9 @@
       height: 5em;
     }
   }
+  @media only screen and (max-height: 750px){
+    .imgHeader__welcome {
+      padding-top: 12em;
+      
+    }
+  }
