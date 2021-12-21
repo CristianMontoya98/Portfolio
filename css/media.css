@@ -293,6 +293,11 @@
       width: 95%;
     }
   }
+  @media only screen and (max-width: 410px){
+    #logo {
+      margin-left: 7.5em;
+    }
+  }
   @media only screen and (max-width: 380px) {
     #logo {
       margin-left: 7em;
