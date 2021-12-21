@@ -301,7 +301,7 @@
       margin-top: 0.1em;
     }
   }
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: 390px) {
     #logo {
       margin-left: 7em;
     }
@@ -355,6 +355,5 @@
   @media only screen and (max-height: 760px){
     .imgHeader__welcome {
       padding-top: 12em;
-      
     }
   }
