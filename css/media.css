@@ -352,7 +352,7 @@
       height: 5em;
     }
   }
-  @media only screen and (max-height: 750px){
+  @media only screen and (max-height: 760px){
     .imgHeader__welcome {
       padding-top: 12em;
       
