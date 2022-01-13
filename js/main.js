@@ -26,9 +26,9 @@ hideMenu();
 activeItem();
 eventItem();
 /* Event listener scroll, executes the viewScroll function */
-window.addEventListener('scroll', viewScroll);
+window.addEventListener("scroll", viewScroll);
 
-form.addEventListener('submit', handleSubmit);
+form.addEventListener("submit", handleSubmit);
 /* Function to view the diferent divs with their animations,
 verifies if the offsetTop of the element is less than the scrolltop and
 in every case asign the opacity and an animation with the diferents classes */
@@ -37,10 +37,9 @@ function viewScroll() {
   let aboutAnimated = aboutText.offsetTop;
   let contactAnimated = contactG.offsetTop;
   let contactFanimated = contactF.offsetTop;
-  if (aboutAnimated - 600< scrollTop) {
+  if (aboutAnimated - 600 < scrollTop) {
     aboutText.style.opacity = 1;
     aboutText.classList.add("animateLeft");
-    
   }
   if (aboutAnimated - 300 < scrollTop) {
     aboutImage.style.opacity = 1;
@@ -61,12 +60,6 @@ function viewScroll() {
     contactF.style.opacity = 1;
     contactF.classList.add("animateUp");
   }
-  
-  
-  
- 
-
-  
 }
 
 /* function to hide the navbar when the user scrolls down the page */
@@ -81,35 +74,33 @@ function hideMenu() {
       contmenu.style.top = "-250px";
       contmenu.style.transition = "0.5s";
     }
-  
+
     prevScrollp = currentScrollp;
-  
+
     let up = window.pageYOffset;
     if (up <= 600) {
-     
       contmenu.style.background = "none";
     } else {
       contmenu.style.background = "rgba(0,0,0,0.9)";
     }
-  
   };
 }
 /* function to set the active class in two cases after the click event,
 first remove the class active in all the elements, then add the class to the element clicked */
-function activeItem(){
-links.forEach((element) => {
-  element.addEventListener("click", (even) => {
-    links.forEach((link) => {
-      link.classList.remove("active");
+function activeItem() {
+  links.forEach((element) => {
+    element.addEventListener("click", (even) => {
+      links.forEach((link) => {
+        link.classList.remove("active");
+      });
+      even.target.classList.add("active");
     });
-    even.target.classList.add("active");
   });
-});
 }
 /* function to show or hide the menu when the hamburger button is clicked */
 function activateMenu() {
-  menubtn.addEventListener('click', () => {
-    icon.classList.toggle('fa-times');
+  menubtn.addEventListener("click", () => {
+    icon.classList.toggle("fa-times");
     auxiliar = false;
     if (activator) {
       boxMenu.style.left = "0";
@@ -120,32 +111,32 @@ function activateMenu() {
       boxMenu.style.transition = "0.5s";
       activator = true;
     }
-  })
+  });
 }
 /* function to hide the menu when an option is clicked */
 function hide() {
   if (!auxiliar) {
-      boxMenu.style.left = "-100%";
-      boxMenu.style.transition = "0.5s";
-      icon.classList.toggle('fa-times');
-      auxiliar = true;
-      activator = true;
+    boxMenu.style.left = "-100%";
+    boxMenu.style.transition = "0.5s";
+    icon.classList.toggle("fa-times");
+    auxiliar = true;
+    activator = true;
   }
 }
 function eventItem() {
-  home.addEventListener('click', () => {
+  home.addEventListener("click", () => {
     hide();
   });
-  about.addEventListener('click', () => {
+  about.addEventListener("click", () => {
     hide();
   });
-  skills.addEventListener('click', () => {
+  skills.addEventListener("click", () => {
     hide();
   });
-  portfolio.addEventListener('click', () => {
+  portfolio.addEventListener("click", () => {
     hide();
   });
-  contact.addEventListener('click', () => {
+  contact.addEventListener("click", () => {
     hide();
   });
 }
@@ -158,11 +149,11 @@ async function handleSubmit(event) {
     method: this.method,
     body: formD,
     headers: {
-      'Accept': 'application/json'
-    }
+      Accept: "application/json",
+    },
   });
   if (response.ok) {
     this.reset();
-    alert('Thank you for contact me :)');
+    alert("Thank you for contact me :)");
   }
 }
