@@ -274,6 +274,7 @@
   
     .card {
       margin: 1em;
+      height: auto;
     }
   
     .contact__content--form {
@@ -293,7 +294,7 @@
       width: 95%;
     }
   }
-  @media only screen and (max-width: 410px){
+  @media only screen and (max-width: 415px){
     #logo {
       margin-left: 7.5em;
     }
