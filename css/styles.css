@@ -320,15 +320,42 @@ aply the effect of animation in the text */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+ 
+}
+.skills__content--card{
+  margin-top: 1em;
+  border: solid 6px #055255;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40em;
+  margin-bottom: 5em;
+  height: auto;
+  padding-bottom: 5em;
+  flex-wrap: wrap;
+  position: relative;
+  text-align: center;
+}
+.skills__content--card h3{
+position: absolute;
+top: -30px;
+left: 2%;
+font-size: 2.5em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+color:#055255 ;
+background: var(--blue);
 }
 .skills__content--element {
-  width: 600px;
+  width: 200px;
   margin-top: 7em;
   text-align: center;
   transition: 0.5s;
 }
 .skills__content--element img {
   transition: all 0.5s;
+  width: 5em;
 }
 .skills__content--element img:hover {
   transform: scale(1.2);
