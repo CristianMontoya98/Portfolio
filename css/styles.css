@@ -149,6 +149,7 @@ aply the effect of animation in the text */
   margin-top: 1em;
   margin-bottom: 1em;
   border: none;
+  
 }
 /* styles of the h2 tag in the header*/
 .imgHeader .imgHeader__welcome h2 {
@@ -370,13 +371,14 @@ background: var(--blue);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   margin: 4em;
-  margin-top: 5em;
+  margin-top: 3em;
   width: 25.273em;
   height: 43.5em;
   border-radius: 10px;
